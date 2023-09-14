@@ -19,5 +19,5 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Remotes: 
-    R-ArcGIS/arcgisutils
+    R-ArcGIS/arcgisutils,
     R-ArcGIS/api-interface
