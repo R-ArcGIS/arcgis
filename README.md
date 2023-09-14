@@ -6,8 +6,15 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+**NOTE**: under active development! Feedback welcome via issues.
+
 arcgis is a metapackage that loads ArcGIS location services packages.
-This includes {arcgislayers}, and {arcgisutils}.
+This includes
+[`{arcgislayers}`](https://github.com/R-ArcGIS/arcgislayers), and
+[`{arcgisutils}`](https://github.com/R-ArcGIS/arcgisutils).
+
+Please refer to [`arcgislayers`](https://r.esri.com/arcgislayers/)
+package site for examples.
 
 ## Installation
 
