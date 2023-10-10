@@ -22,3 +22,4 @@ Remotes:
     R-ArcGIS/arcgisutils,
     R-ArcGIS/arcgislyaers
 Config/Needs/website: rmarkdown
+URL: https://github.com/R-ArcGIS/arcgis/, https://r.esri.com/arcgis/
