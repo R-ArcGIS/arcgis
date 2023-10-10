@@ -1,5 +1,5 @@
 Package: arcgis
-Title: What the Package Does (One Line, Title Case)
+Title: ArcGIS Location Services Meta-Package
 Version: 0.0.0.9000
 Authors@R: 
     person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
@@ -20,4 +20,5 @@ Suggests:
 Config/testthat/edition: 3
 Remotes: 
     R-ArcGIS/arcgisutils,
-    R-ArcGIS/api-interface
+    R-ArcGIS/arcgislyaers
+Config/Needs/website: rmarkdown

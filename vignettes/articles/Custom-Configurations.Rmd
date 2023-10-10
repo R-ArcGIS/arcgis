@@ -1,0 +1,30 @@
+---
+title: "Configuring your environment"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+By default, packages in the `{arcgis}` meta-package are configured to work with ArcGIS Online. `arcgis` utilizes environment variables to determine how requests are crafted and where requests are made. These environment variables are: 
+
+- `ARCGIS_HOST`
+- `ARCGIS_USER`
+- `ARCGIS_CLIENT`
+- `ARCGIS_SECRET`
+- `ARCGIS_TOKEN`
+
+`ARCGIS_HOST` is used to to determine where authorization takes place. By default, this is `"https://www.arcgis.com"`. This is because the packages, by default, interact with ArcGIS Online. To use a different portal, you will need to modify the `ARCGIS_HOST` path to url of that portal. 
+
+`ARCGIS_USER` variable is used to determine who actions are performed on behalf of. Notably, it is used in functions that modify or create resource such as functions from `arcgislayers`: `create_service()`, `add_item()`, and `publish_item()`.
+
+`ARCGIS_CLIENT` and `ARCGIS_SECRET` environment variables are used only in the `auth_client()` OAuth2 client flow authorization. See the article on authorization for more. 
+
+`ARCGIS_TOKEN` is used to fetch a users access token. These are retrieved using the various `auth_` functions of `arcgisutils` and set using `set_auth_token()`. Alternatively, the `ARCGIS_TOKEN` can be set to an API key. 
+
+## Modifying your environment variable
+
+Environment variables should _**never**_ be included in your code. Instead, they should be stored in an external environment file such as an `.Renvrion` file. See `usethis::edit_r_environ()` on how you can set these variables. Generally, it is recommended that you have a project level `.Renviron` file that stores only the requisite environment variables. 
