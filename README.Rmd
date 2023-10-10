@@ -18,9 +18,12 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-**NOTE**: under active development! Feedback welcome via issues. 
+**NOTE**: under active development! We'd love to hear from you on how you would like to use locations services R packages. Please [start a discussion](https://github.com/R-ArcGIS/arcgis/discussions) and we'll get back to you there! 
 
-arcgis is a metapackage that loads ArcGIS location services packages. This includes [`{arcgislayers}`](https://github.com/R-ArcGIS/arcgislayers), and [`{arcgisutils}`](https://github.com/R-ArcGIS/arcgisutils).
+arcgis is a meta-package that loads ArcGIS location services packages. As of this writing, it includes the packages  [`{arcgislayers}`](https://github.com/R-ArcGIS/arcgislayers), and [`{arcgisutils}`](https://github.com/R-ArcGIS/arcgisutils). 
+
+- `arcgislayers` is the workhorse package that interacts with feature services and image servers
+- `arcgisutils` is a developer oriented package that is used for crafting requests to be used by other location service packages such as `arcgislayers`
 
 Please refer to [`arcgislayers`](https://r.esri.com/arcgislayers/) package site for examples. 
 
@@ -34,7 +37,6 @@ remotes::install_github("R-ArcGIS/arcgis")
 ```
 
 ## Example
-
 
 
 ```{r example}
