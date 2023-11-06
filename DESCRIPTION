@@ -20,6 +20,6 @@ Suggests:
 Config/testthat/edition: 3
 Remotes: 
     R-ArcGIS/arcgisutils,
-    R-ArcGIS/arcgislyaers
+    R-ArcGIS/arcgislayers
 Config/Needs/website: rmarkdown
 URL: https://github.com/R-ArcGIS/arcgis/, https://r.esri.com/arcgis/
