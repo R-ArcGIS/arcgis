@@ -23,7 +23,7 @@ By default, packages in the `{arcgis}` meta-package are configured to work with 
 
 - **`ARCGIS_USER`** variable is used to determine who actions are performed on behalf of. Notably, it is used in functions that modify or create resource such as functions from `arcgislayers`: `create_service()`, `add_item()`, and `publish_item()`.
 
-- **`ARCGIS_CLIENT`** and **`ARCGIS_SECRET`** environment variables are used only in the `auth_client()` OAuth2 client flow authorization. See the article on authorization for more. 
+- **`ARCGIS_CLIENT`** and **`ARCGIS_SECRET`** environment variables are used only in the `auth_client()` OAuth2 client flow authorization. See the [article on authorization](https://r-arcgis.github.io/arcgislayers/articles/Authorization.html) for more. 
 
 - **`ARCGIS_TOKEN`** is used to fetch a users access token. These are retrieved using the various `auth_` functions of `arcgisutils` and set using `set_auth_token()`. Alternatively, the `ARCGIS_TOKEN` can be set to an API key. 
 
