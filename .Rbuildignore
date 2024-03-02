@@ -10,3 +10,4 @@
 ^dev$
 ^arcgis\.Rproj$
 ^\.Rhistory$
+^cran-comments\.md$
