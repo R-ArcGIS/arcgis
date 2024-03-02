@@ -6,3 +6,7 @@
 ^docs$
 ^pkgdown$
 ^\.github$
+^README\.*$
+^dev$
+^arcgis\.Rproj$
+^\.Rhistory$

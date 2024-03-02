@@ -8,7 +8,7 @@ arcgis_packages(include_self = TRUE)
 }
 \arguments{
 \item{include_self}{default \code{TRUE}. Includes the arcgis package name in the
-resultant character vector()}
+resultant character vector.}
 }
 \value{
 A character vector of package names included in the arcgis metapackage.
@@ -17,8 +17,6 @@ A character vector of package names included in the arcgis metapackage.
 List all {arcgis} packages
 }
 \examples{
-if (interactive()) {
-  arcgis_packages()
-}
+arcgis_packages()
 
 }

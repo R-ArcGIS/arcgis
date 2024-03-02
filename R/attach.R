@@ -26,23 +26,23 @@ arcgis_attach <- function() {
 #' List all {arcgis} packages
 #'
 #' @param include_self default `TRUE`. Includes the arcgis package name in the
-#'   resultant character vector()
+#'   resultant character vector.
 #' @returns A character vector of package names included in the arcgis metapackage.
-#'@export
+#' @export
 #' @examples
-#' if (interactive()) {
-#'   arcgis_packages()
-#' }
+#' arcgis_packages()
 #'
 # https://github.com/tidyverse/tidyverse/blob/main/R/utils.R
 arcgis_packages <- function(include_self = TRUE) {
-  raw <- utils::packageDescription("arcgis")$Imports
-  imports <- strsplit(raw, ",")[[1]]
-  parsed <- gsub("^\\s+|\\s+$", "", imports)
-  names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
-
+  pkgs <- c("arcgislayers", "arcgisutils")
   if (include_self) {
-    names <- c(names, "arcgis")
+    pkgs <- c(pkgs, "arcgis")
   }
-  names
+  pkgs
+}
+
+
+ignore_imports <- function() {
+  arcgisutils::compact(list())
+  arcgislayers::xss_defaults()
 }
