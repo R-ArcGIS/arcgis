@@ -17,6 +17,7 @@ Imports:
     arcgislayers (>= 0.2.0),
     arcgisutils (>= 0.2.0),
     cli,
+    httr2 (>= 1.0.0),
     utils
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1

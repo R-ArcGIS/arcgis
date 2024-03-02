@@ -45,4 +45,5 @@ arcgis_packages <- function(include_self = TRUE) {
 ignore_imports <- function() {
   arcgisutils::compact(list())
   arcgislayers::xss_defaults()
+  httr2::request()
 }
