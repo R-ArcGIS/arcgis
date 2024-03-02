@@ -149,7 +149,7 @@ to_upload <- ga_data |>
 library(arcgis)
 #> Attaching core arcgis packages:
 #>   - {arcgisutils} v0.1.0
-#>   - {arcgislayers} v0.1.0 
+#>   - {arcgislayers} v0.1.0
 ```
 
 ## Knock on the door (authorization)

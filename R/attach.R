@@ -25,9 +25,9 @@ arcgis_attach <- function() {
 
 #' List all {arcgis} packages
 #'
-#' @param include_self default `TRUE`. Includes the arcgis package name in the
+#' @param include_self default `TRUE`. Includes the "arcgis" package name in the
 #'   resultant character vector.
-#' @returns A character vector of package names included in the arcgis metapackage.
+#' @returns A character vector of package names included in the "arcgis" meta-package.
 #' @export
 #' @examples
 #' arcgis_packages()

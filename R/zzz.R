@@ -8,7 +8,6 @@
     )
     pkg_ul(attached)
   }
-
 }
 
 pkg_ul <- function(pkgs) {
@@ -22,8 +21,8 @@ pkg_ul <- function(pkgs) {
     pkg <- pkgs[i]
     ver <- pkg_versions[i]
     cli::cli_inform(
-      c(">" = "{.pkg {pkg}} v{ver}"), class = "packageStartupMessage"
+      c(">" = "{.pkg {pkg}} v{ver}"),
+      class = "packageStartupMessage"
     )
   }
-
 }
