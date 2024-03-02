@@ -2,19 +2,19 @@
 % Please edit documentation in R/attach.R
 \name{arcgis_packages}
 \alias{arcgis_packages}
-\title{List all {arcgis} packages}
+\title{List all arcgis packages}
 \usage{
 arcgis_packages(include_self = TRUE)
 }
 \arguments{
-\item{include_self}{default \code{TRUE}. Includes the arcgis package name in the
+\item{include_self}{default \code{TRUE}. Includes the "arcgis" package name in the
 resultant character vector.}
 }
 \value{
-A character vector of package names included in the arcgis metapackage.
+A character vector of package names included in the "arcgis" meta-package.
 }
 \description{
-List all {arcgis} packages
+List all arcgis packages
 }
 \examples{
 arcgis_packages()

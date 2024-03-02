@@ -23,7 +23,7 @@ arcgis_attach <- function() {
   invisible(to_load)
 }
 
-#' List all {arcgis} packages
+#' List all arcgis packages
 #'
 #' @param include_self default `TRUE`. Includes the "arcgis" package name in the
 #'   resultant character vector.
