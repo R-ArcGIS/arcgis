@@ -1,6 +1,6 @@
 # cribbed from https://github.com/tidyverse/tidyverse/blob/main/R/attach.R
 # Uses MIT license
-core <- c("arcgisutils", "arcgislayers")
+core <- c("arcgisutils", "arcgislayers", "arcgisgeocode", "arcgisplaces")
 
 core_unloaded <- function() {
   search <- paste0("package:", core)
