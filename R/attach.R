@@ -2,6 +2,15 @@
 # Uses MIT license
 core <- c("arcgisutils", "arcgislayers", "arcgisgeocode", "arcgisplaces")
 
+ignore_imports <- function() {
+  arcgisutils::compact(list())
+  arcgislayers::xss_defaults()
+  arcgisgeocode::default_geocoder()
+  arcgisplaces::fields
+  httr2::request()
+}
+
+
 core_unloaded <- function() {
   search <- paste0("package:", core)
   core[!search %in% search()]
@@ -34,16 +43,9 @@ arcgis_attach <- function() {
 #'
 # https://github.com/tidyverse/tidyverse/blob/main/R/utils.R
 arcgis_packages <- function(include_self = TRUE) {
-  pkgs <- c("arcgislayers", "arcgisutils")
+  pkgs <- core
   if (include_self) {
     pkgs <- c(pkgs, "arcgis")
   }
   pkgs
-}
-
-
-ignore_imports <- function() {
-  arcgisutils::compact(list())
-  arcgislayers::xss_defaults()
-  httr2::request()
 }

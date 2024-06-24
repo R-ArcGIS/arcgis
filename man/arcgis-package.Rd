@@ -6,7 +6,7 @@
 \alias{arcgis-package}
 \title{arcgis: ArcGIS Location Services Meta-Package}
 \description{
-Provides easy installation and loading of core ArcGIS location services packages 'arcgislayers' and 'arcgisutils'. Enabling developers to interact with spatial data and services from 'ArcGIS Online', 'ArcGIS Enterprise', and 'ArcGIS Platform'. Learn more about the 'arcgis' meta-package at \url{https://r.esri.com/r-bridge-site/}.
+Provides easy installation and loading of core ArcGIS location services packages 'arcgislayers', 'arcgisutils', 'arcgisgeocode', and 'arcgisplaces'. Enabling developers to interact with spatial data and services from 'ArcGIS Online', 'ArcGIS Enterprise', and 'ArcGIS Platform'. Learn more about the 'arcgis' meta-package at \url{https://r.esri.com/r-bridge-site/}.
 }
 \seealso{
 Useful links:

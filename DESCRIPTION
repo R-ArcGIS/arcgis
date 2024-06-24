@@ -30,3 +30,5 @@ Suggests:
 Config/testthat/edition: 3
 Config/Needs/website: rmarkdown
 URL: https://github.com/R-ArcGIS/arcgis/, https://r.esri.com/arcgis/
+Config/rextendr/version: 0.3.1.9000
+SystemRequirements: Cargo (Rust's package manager), rustc
