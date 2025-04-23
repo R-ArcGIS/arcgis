@@ -1,6 +1,12 @@
 # cribbed from https://github.com/tidyverse/tidyverse/blob/main/R/attach.R
 # Uses MIT license
-core <- c("arcgisutils", "arcgislayers", "arcgisgeocode", "arcgisplaces")
+core <- c(
+  "arcgisutils",
+  "arcgislayers",
+  "arcgisgeocode",
+  "arcgisplaces",
+  "arcpbf"
+)
 
 ignore_imports <- function() {
   arcgisutils::compact(list())

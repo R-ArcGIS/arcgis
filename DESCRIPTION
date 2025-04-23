@@ -1,6 +1,6 @@
 Package: arcgis
 Title: ArcGIS Location Services Meta-Package
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: 
     person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9910-865X"))
@@ -9,7 +9,7 @@ Description: Provides easy installation and loading of core ArcGIS
     'arcgisgeocode', and 'arcgisplaces'. Enabling developers to interact
     with spatial data and services from 'ArcGIS Online', 'ArcGIS
     Enterprise', and 'ArcGIS Platform'. Learn more about the 'arcgis'
-    meta-package at <https://r.esri.com/r-bridge-site/>.
+    meta-package at <https://developers.arcgis.com/r-bridge/>.
 Language: en
 License: Apache License (>= 2)
 Encoding: UTF-8
@@ -23,12 +23,13 @@ Imports:
     httr2 (>= 1.0.0),
     utils
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Suggests: 
     arcpbf,
+    calcite,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Config/Needs/website: rmarkdown
-URL: https://github.com/R-ArcGIS/arcgis/, https://r.esri.com/arcgis/
+URL: https://github.com/R-ArcGIS/arcgis/, https://developers.arcgis.com/r-bridge/
 Config/rextendr/version: 0.3.1.9000
 SystemRequirements: Cargo (Rust's package manager), rustc
